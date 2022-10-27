@@ -1,14 +1,29 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-class SingleDiv extends React.PureComponent {
+class CalcButtons extends React.PureComponent {
+  constructor(props) {
+    super(props);
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  handleClick(e) {
+    const { handleClickP } = this.props;
+    handleClickP(e.target.value);
+  }
+
   render() {
     const { classy, name } = this.props;
-    return <button type="button" className={classy}>{name}</button>;
+    return (
+      <button value={name} type="button" className={classy} onClick={this.handleClick}>
+        {name}
+      </button>
+    );
   }
 }
-SingleDiv.propTypes = {
+CalcButtons.propTypes = {
   name: PropTypes.string.isRequired,
   classy: PropTypes.string.isRequired,
+  handleClickP: PropTypes.func.isRequired,
 };
-export default SingleDiv;
+export default CalcButtons;

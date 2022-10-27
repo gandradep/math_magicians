@@ -1,5 +1,5 @@
 # Math Magicians app
-> Develop the UI of the calculator  using `Create-React-app`
+> Develop a calculator  using `Create-React-app`
 > To run the project clone this repo install dependencies `npm install` and run the app `npm start`
 
 
@@ -24,11 +24,8 @@
 Give a ⭐️ if you like this project!
 
 ## Acknowledgments
-
+- [@microverseinc](https://github.com/microverseinc) for the calculate.js and operate.js files.
 
 ## 📝 License
 
 This project is [MIT](./LICENSE) licensed.
-'7', '8', '9', 'x',
-'4', '5', '6', '-',
-'1', '2', '3', '+',
