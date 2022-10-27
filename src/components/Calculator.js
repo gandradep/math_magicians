@@ -1,4 +1,3 @@
-/* eslint-disable */
 import React from 'react';
 import SingleDiv from './SingleDiv';
 import CalcDisplay from './CalcDisplay';
@@ -34,30 +33,25 @@ class Calculator extends React.PureComponent {
       next: null,
       operation: null,
     };
-
-
   }
 
   handleClick(value) {
     const afterCalc = calculate(this.state, value);
-    console.log(afterCalc);
     this.setState(afterCalc);
-
   }
 
   render() {
     let displayValue = '0';
     const { total, next } = this.state;
 
-    if (next){
+    if (next) {
       displayValue = next;
+    } else if (total === null) {
+      displayValue = '0';
     } else {
-      if(total === null){
-        displayValue = '0';
-      } else {
-        displayValue = total;
-      }
+      displayValue = total;
     }
+
     return (
       <div id="calculator">
         <CalcDisplay key="display" name={displayValue} classy="gray displayCalculator" />
@@ -66,7 +60,7 @@ class Calculator extends React.PureComponent {
             key={item.id}
             name={item.value}
             classy={item.classy}
-            handleClick={this.handleClick}
+            handleClickP={this.handleClick}
           />
         ))}
 

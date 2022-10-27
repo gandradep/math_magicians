@@ -1,15 +1,15 @@
-/* eslint-disable */
 import React from 'react';
 import PropTypes from 'prop-types';
 
-class SingleDiv extends React.PureComponent {
+class CalcButtons extends React.PureComponent {
   constructor(props) {
     super(props);
     this.handleClick = this.handleClick.bind(this);
   }
 
   handleClick(e) {
-    this.props.handleClick(e.target.value);
+    const { handleClickP } = this.props;
+    handleClickP(e.target.value);
   }
 
   render() {
@@ -21,8 +21,9 @@ class SingleDiv extends React.PureComponent {
     );
   }
 }
-SingleDiv.propTypes = {
+CalcButtons.propTypes = {
   name: PropTypes.string.isRequired,
   classy: PropTypes.string.isRequired,
+  handleClickP: PropTypes.func.isRequired,
 };
-export default SingleDiv;
+export default CalcButtons;
