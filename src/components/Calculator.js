@@ -45,18 +45,22 @@ const Calculator = () => {
   } else {
     displayValue = total;
   }
-
+  const message = "Let's do some math!";
   return (
-    <div id="calculator">
-      <CalcDisplay key="display" name={displayValue} classy="gray displayCalculator" />
-      {buttonValues.map((item) => (
-        <SingleDiv
-          key={item.id}
-          name={item.value}
-          classy={item.classy}
-          handleClickP={handleClick}
-        />
-      ))}
+
+    <div className="calculatorContainer dFlex">
+      <h2 className="fs175">{message}</h2>
+      <div id="calculator">
+        <CalcDisplay key="display" name={displayValue} classy="gray displayCalculator" />
+        {buttonValues.map((item) => (
+          <SingleDiv
+            key={item.id}
+            name={item.value}
+            classy={item.classy}
+            handleClickP={handleClick}
+          />
+        ))}
+      </div>
     </div>
   );
 };
