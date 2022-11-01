@@ -1,5 +1,6 @@
 # Math Magicians app
-> Develop a calculator  using `Create-React-app`
+> Develop a calculator App  using `Create-React-app`
+> This app uses ReactRouters for the navbar links.
 > To run the project clone this repo install dependencies `npm install` and run the app `npm start`
 
 
@@ -9,6 +10,7 @@
 - Webpack.
 - React
 - Linters.
+- ReactRouter
 
 ## Authors
 
