@@ -33,6 +33,7 @@ const Calculator = () => {
 
   const handleClick = (value) => {
     const afterCalc = calculate(state, value);
+    console.log(afterCalc);
     setState(afterCalc);
   };
   let displayValue = '0';
