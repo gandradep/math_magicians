@@ -14,6 +14,7 @@ exports[`Calculator renders correctly 1`] = `
   >
     <span
       className="gray displayCalculator"
+      title="display"
     >
       0
     </span>
