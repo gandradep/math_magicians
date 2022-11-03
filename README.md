@@ -3,7 +3,7 @@
 > This app uses ReactRouters for the navbar links.
 >Tests where done.
 > To run the project clone this repo install dependencies `npm install` and run the app `npm start`
-
+> Check the [deployed version](https://fanciful-moxie-2b27f1.netlify.app/)
 
 ## Built With
 
