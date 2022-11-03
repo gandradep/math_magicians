@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 class CalcDisplay extends React.PureComponent {
   render() {
     const { classy, name } = this.props;
-    return <span className={classy}>{name}</span>;
+    return <span title="display" className={classy}>{name}</span>;
   }
 }
 CalcDisplay.propTypes = {

@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SingleDiv renders correctly 1`] = `
+<button
+  onClick={[Function]}
+  type="button"
+/>
+`;

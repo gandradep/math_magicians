@@ -1,6 +1,7 @@
 # Math Magicians app
 > Develop a calculator App  using `Create-React-app`
 > This app uses ReactRouters for the navbar links.
+>Tests where done.
 > To run the project clone this repo install dependencies `npm install` and run the app `npm start`
 
 
@@ -27,6 +28,10 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 - [@microverseinc](https://github.com/microverseinc) for the calculate.js and operate.js files.
+- 👤 **Daphine Atim** helping with the test files.
+  - GitHub: @Daphineatim
+  - Twitter: @dhaphyn
+  - LinkedIn: DaphineAtim 
 
 ## 📝 License
 
