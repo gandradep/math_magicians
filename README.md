@@ -28,6 +28,10 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 - [@microverseinc](https://github.com/microverseinc) for the calculate.js and operate.js files.
+- 👤 **Daphine Atim** helping with the test files.
+  - GitHub: @Daphineatim
+  - Twitter: @dhaphyn
+  - LinkedIn: DaphineAtim 
 
 ## 📝 License
 
